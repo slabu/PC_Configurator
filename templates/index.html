@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=1) }}">
+
+    
+</head>
+
+<body class="index_background">
+
+    <div class="question">
+
+        <h1 class="question_text">Питання: {{ current_question }}</h1>
+
+    </div>
+
+    <div class="answers_block">
+
+    
+    <form id="answer_form" method="POST">
+        <p>
+
+        <div class="buttons">
+
+            <div class="radio_butt">
+                <input type="radio" name="answer_python" id="r1" value="{{ ans1 }}" class="answer" /> <label for="r1" class="ans_desc">{{ans1}}</label> <br /> <br /> <br />
+            </div>
+
+            <div class="radio_butt">
+                <input type="radio" name="answer_python" id="r2" value="{{ ans2 }}" class="answer" /> <label for="r1" class="ans_desc">{{ans2}}</label> <br /> <br /> <br />
+            </div>
+        
+        </div>
+
+        
+        <div flash>
+
+            {% with messages = get_flashed_messages() %}
+
+                {% if messages %}
+                    {% for message in messages %}
+                        <h2 class="flash_message">{{ message }}</h2>
+                    {% endfor %}
+                {% endif %}
+
+            {% endwith %}
+
+        </div>
+
+
+
+        </p>
+        
+        
+
+
+    
+
+    </div>
+
+
+<div class="bot">
+
+    <div class="finish_buttons">
+
+        <div class="button_1"> <input type="submit" value="Отримати конфігурацію" id="r3" formaction="check" class="check_button" onclick="openloader('loading_class')" /> </div>
+        <div class="button_2"> <input type="submit" value="Далi" id="r4" formaction="/" class="next_button" /> </div>
+
+    </div>
+
+</div>
+
+</form>
+
+<div id="loading_class">
+    <div class="loading_text">
+        <h2 class="loading">LOADING...</h2>
+    </div>
+</div>
+
+
+<script>
+    function openloader(loading_class){
+        display = document.getElementById('loading_class').style.display;
+        if(display == "none"){
+            document.getElementById('loading_class').style.display = "block";
+        }else{
+            document.getElementById('loading_class').style.display = "block";
+        }
+    }
+</script>
+
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow(){
+            document.getElementById
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+    </script>
+
+
+
+<div class="b_popup" id="popup1">
+    <div class="b_popup_content popup_font">
+        <p>Вітаємо Вас на сервісі для створення компьютерних конфігурацій. Сервіс надає можливість збирати комп'ютери
+            для будь-якого напрямку використання.
+        </p>
+        <p>Для збірки комп'ютера Вам необхідно пройти опитування. В залежності від напрямку думки, яким ви будете відповідати на питання, кількість
+            питань буде змінюватись.
+        </p>
+        <p>Для того, щоб почати опитування, пролистайте сторінку донизу та клацніть на відповідну кнопку. Далі обирайте варіант відовіді, який задоволняє
+            Ваші потреби та побажання стосовно конфігурації, що збирається.
+        </p>
+        <p>Якщо ви захочете отримати готову конфігурацію якнайшвидше, Ви можете завершити опитування попередньо на будь-якому питанні, клацнувши по
+            відповідній кнопці, але майте на увазі, що чим більше питань матиме відповідь від Вас, тим точніше будуть підібрані комплектуючі комп'ютера.
+        </p>
+        <p>Алгоритм збере Вам комп'ютер, який матиме комплектуючі необхідного рівня для вирішення ваших задач, а також коштуватиме, як конфігурація, яка
+            виконує ці задачі без проблем для користувача.
+        </p>
+        <p>Якщо Вам не сподобалась конфігурація, Ви можете зібрати іншу, клацнувши на відповідній кнопці на фінальній сторінці.</p>
+        <a href="javascript:PopUpHide()" class="popup_butt">Закрити</a>
+    </div>
+
+
+</div>
+
+
+
+
+
+<div class="footer">
+    <h3 class="footer_content">Designed by: <a href="https://www.instagram.com/azh_artist/" class="footer_href" target="blank">Best Bun Ever</a></h3>    
+</div>
+
+
+<header>
+
+
+    
+    <div class="info">
+
+    <div class="info_butt">
+        <a href="javascript:PopUpShow()"><img src="../static/Icons/info_button.png" width="30" height="30"></a>
+    </div>
+
+    </div>
+
+
+</header>
+
+
+
+
+</body>
+
+</html>

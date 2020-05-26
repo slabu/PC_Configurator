@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+
+    {% with messages = get_flashed_messages() %}
+
+        {% if messages %}
+            {% for message in messages %}
+                <h3>{{ message }}</h3>
+            {% endfor %}
+        {% endif %}
+
+    {% endwith %}
+</head>
+
+<body>
+
+    <h1>Питання: {{ current_question }}</h1>
+
+
+
+    <form id="answer_form" method="POST">
+        <p>
+            Answer: <br /> <br /> <br />
+            <input type="radio" name="answer_python" id="r1" value="{{ ans1 }}" /> <label for="r1">{{ans1}}</label> <br /> <br /> <br />
+            <input type="radio" name="answer_python" id="r2" value="{{ ans2 }}" /> <label for="r1">{{ans2}}</label> <br /> <br /> <br />
+        </p>
+        
+        <p>
+            <input type="submit" value="Check" id="r3" formaction="check" />
+            <input type="submit" value="Next" id="r4" formaction="/" />
+
+        </p>
+
+    </form>
+
+
+</body>
+
+</html>

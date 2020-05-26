@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=2) }}">
+</head>
+
+<body>
+
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide1();
+        });
+        //Функция отображения PopUp
+        function PopUpShow1(){
+            document.getElementById
+            $("#popup2").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide1(){
+            $("#popup2").hide();
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow(){
+            document.getElementById
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+    </script>
+
+
+
+<h1 align="Center" class="top_font">Ваша конфiгурацiя</h1>
+    
+
+
+
+<div class="main">
+    
+    <div class="part get_out1">
+        
+
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['CPU_Name'] }}</h2>
+            <h2 class="description description_content">Ядер: {{ fin['CPU_Cores'] }}, Потоків: {{ fin['CPU_Threads'] }}, Частота: {{ fin['CPU_Frequency'] }}, TDP: {{fin['CPU_TDP_W']}}W</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/procik.png" width="50" height="50">
+            <h3 class="name">Процесор</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out2">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['GPU_Name'] }}</h2>
+            <h2 class="description description_content">Пам'ять: {{ fin['GPU_RAM'] }} GB, Тип: {{ fin['GPU_Series'] }}</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/video.png" width="50" height="50">
+            <h3 class="name">Вiдеокарта</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out3">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['RAM_Name'] }}</h2>
+            <h2 class="description description_content">Об'ем: {{ fin['RAM_Amount'] }}, Частота: {{ fin['RAM_Frequency'] }}</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/operativka.png" width="50" height="50">
+            <h3 class="name">ОЗУ</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out4">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['Motherboard_Name'] }}</h2>
+            <h2 class="description description_content">Максимальна частота пам'яті: {{ fin['RAM_Frequency'] }}</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/materinka.png" width="50" height="50">
+            <h3 class="name">Материнська плата</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out5">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['CPU_Radiator_Name'] }}</h2>
+            <h2 class="description description_content">Розсіювана потужність: {{ fin['CPU_Radiator_TDP_W'] }}W</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/radiator.png" width="50" height="50">
+            <h3 class="name">Кулер</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out6">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['PSU_Name'] }}</h2>
+            <h2 class="description description_content">Вихідна потужність блока живлення {{ fin['PSU_Output_capacity'] }}</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/pitaniye.png" width="50" height="50">
+            <h3 class="name">Блок живлення</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out7">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['HDD_Name'] }}</h2>
+            <h2 class="description description_content">Об'ем: {{ fin['HDD_Size'] }} GB</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/zhoskiy.png" width="50" height="50">
+            <h3 class="name">Жорсткий диск</h3>
+        </div>
+
+    </div>
+
+
+    <div class="part get_out8">
+
+        
+                
+        <div class="under_img">
+            <p>ahdsjlfhdlsajasdgdgkh</p>
+        </div>
+
+        <div class="content">
+            <h2 class="description">{{ fin['SSD_Name'] }}</h2>
+            <h2 class="description description_content">Об'ем: {{ fin['SSD_Size'] }} GB, Зчитування: {{ fin['SSD_Read_Speed'] }} MB/S, Запис: {{ fin['SSD_Write_Speed'] }} MB/S</h2>
+        </div>
+
+        <div class="image">
+            <img src="../static/Icons/ssd.png" width="50" height="50">
+            <h3 class="name">ССД-диск</h3>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+<div class="keks">
+    
+    <div class="prices price_appear">
+
+
+
+        <table class="table_prices price_appear">
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть Процесора</th>
+                <th class="th_price price_appear">{{ fin['CPU_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть вiдеокарти</th>
+                <th class="th_price price_appear">{{ fin['GPU_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть ОЗУ</th>
+                <th class="th_price price_appear">{{ fin['RAM_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть материнки</th>
+                <th class="th_price price_appear">{{ fin['Motherboard_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть кулера</th>
+                <th class="th_price price_appear">{{ fin['CPU_Radiator_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть блока живлення</th>
+                <th class="th_price price_appear">{{ fin['PSU_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть жорсткого диска</th>
+                <th class="th_price price_appear">{{ fin['HDD_Price'] }} UAH</th>
+
+            </tr>
+
+            <tr class="new_tr">
+
+                <th class="th_name price_appear">Вартiсть SSD-диска</th>
+                <th class="th_price price_appear">{{ fin['SSD_Price'] }} UAH</th>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+        <div class="final_price appear">
+                <h2 class="final_price_info appear">Загальна вартiсть:{{ fin['Configuration_Price'] }} UAH</h2>
+        </div>
+
+
+
+
+
+        <div class="new_config">
+
+            <a href="/" class="butt" formaction="new_kek">Зiбрати нову конфiгурацiю</a>
+            
+        </div>
+    
+
+
+    
+
+</div>
+
+    
+
+<div class="footer">
+    <h3 class="footer_content">Designed by: <a href="https://www.instagram.com/azh_artist/" class="footer_href" target="blank">Best Bun Ever</a></h3>    
+</div>
+    
+
+
+<header>
+
+    
+    
+    <div class="info">
+
+    <div class="info_butt">
+        <a href="javascript:PopUpShow()"><img src="../static/Icons/info_button.png" width="30" height="30"></a>
+    </div>
+
+    </div>
+
+    <div class="history">
+        <a href="javascript:PopUpShow1()" class="history_butt"><h2 class="history_text">Ваш запит</h2></a>
+    </div>
+
+
+</header>
+
+
+<div class="b_popup" id="popup2">
+    <div class="b_popup_content popup_font">
+        {% for item in range(final_questions|count) %}
+            <p>{{ final_questions[item] }}</p>
+            <p>{{ summary[item] }}</p>
+        {% endfor %}
+        </br>
+        <p>Конфігурацію було зібрано згідно до Ваших відповідей на питання</p>
+        <a href="javascript:PopUpHide1()" class="popup_butt">Закрити</a>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="b_popup" id="popup1">
+    <div class="b_popup_content popup_font">
+        <p>Вітаємо Вас на сервісі для створення компьютерних конфігурацій. Сервіс надає можливість збирати комп'ютери
+            для будь-якого напрямку використання.
+        </p>
+        <p>Для збірки комп'ютера Вам необхідно пройти опитування. В залежності від напрямку думки, яким ви будете відповідати на питання, кількість
+            питань буде змінюватись.
+        </p>
+        <p>Для того, щоб почати опитування, пролистайте сторінку донизу та клацніть на відповідну кнопку. Далі обирайте варіант відовіді, який задоволняє
+            Ваші потреби та побажання стосовно конфігурації, що збирається.
+        </p>
+        <p>Якщо ви захочете отримати готову конфігурацію якнайшвидше, Ви можете завершити опитування попередньо на будь-якому питанні, клацнувши по
+            відповідній кнопці, але майте на увазі, що чим більше питань матиме відповідь від Вас, тим точніше будуть підібрані комплектуючі комп'ютера.
+        </p>
+        <p>Алгоритм збере Вам комп'ютер, який матиме комплектуючі необхідного рівня для вирішення ваших задач, а також коштуватиме, як конфігурація, яка
+            виконує ці задачі без проблем для користувача.
+        </p>
+        <p>Якщо Вам не сподобалась конфігурація, Ви можете зібрати іншу, клацнувши на відповідній кнопці на фінальній сторінці.</p>
+        <a href="javascript:PopUpHide()" class="popup_butt">Закрити</a>
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+</html>

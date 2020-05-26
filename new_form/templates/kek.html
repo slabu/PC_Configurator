@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf8">
+    <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+
+
+    <body>
+        <a href="#loading_class" onclick="openloader('loading_class'); return false">dasdwd</a>
+
+<div id="loading_class" style="display: none;">
+    <div class="loading_text">
+        <h2 class="loading">LOADING...</h2>
+    </div>
+</div>
+
+
+<script>
+    function openloader(loading_class){
+        display = document.getElementById('loading_class').style.display;
+        if(display == "none"){
+            document.getElementById('loading_class').style.display = "block";
+        }
+    }
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    background: black;
+    color: #00e600;
+}
+
+.main{
+    position: absolute;
+    top: 200px;
+    left: 2000px;
+}
+
+.get_out1{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+
+.get_out2{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 0.8s;
+}
+
+.get_out3{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 1.8s;
+}
+
+.get_out4{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 2.8s;
+}
+
+.get_out5{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 3.8s;
+}
+
+.get_out6{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 4.8s;
+}
+
+.get_out7{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 5.8s;
+}
+
+.get_out8{
+    transform: translate(-1450px, 0);
+    -webkit-transform: translate(-1450px,0);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -webkit-transition-delay: 6.8s;
+}
+
+.part{
+    width: 1000px;
+    min-height: 160px;
+    height: 160px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.under_img{
+    width: 200px;
+    height: 160px;
+    background-color: green;
+    float: left;
+}
+
+.content{
+    width: 800px;
+    height: 160px;
+    float: left;
+    background: linear-gradient(to right, #242424, black);
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin-top: -20px;
+    -webkit-box-shadow:0 0 25px #00e600;
+}
+
+.name{
+    margin: 0px;
+}
+
+@font-face{
+    font-family: Pricedown;
+    src: url(../fonts/660_pricedown_rus.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.top_font{
+    font-family: Pricedown;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.description{
+    margin-left: 15px;
+}

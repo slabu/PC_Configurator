@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    {% with messages = get_flashed_messages() %}
+
+        {% if messages %}
+            {% for message in messages %}
+                <h3>{{ message }}</h3>
+            {% endfor %}
+        {% endif %}
+
+    {% endwith %}
+</head>
+
+<body class="index_background">
+
+    <div class="question">
+
+        <h1 class="question_text">Питання: {{ current_question }}</h1>
+
+    </div>
+
+    <div class="answers_block">
+
+    
+    <form id="answer_form" method="POST">
+        <p>
+
+        <div class="buttons">
+
+            <div class="radio_butt">
+                <input type="radio" name="answer_python" id="r1" value="{{ ans1 }}" class="answer" /> <label for="r1" class="ans_desc">{{ans1}}</label> <br /> <br /> <br />
+            </div>
+
+            <div class="radio_butt">
+                <input type="radio" name="answer_python" id="r2" value="{{ ans2 }}" class="answer" /> <label for="r1" class="ans_desc">{{ans2}}</label> <br /> <br /> <br />
+            </div>
+        
+        </div>
+
+        </p>
+        
+        
+
+
+    </form>
+
+    </div>
+
+
+<div class="bot">
+
+    <div class="finish_buttons">
+
+        <div class="button_1"> <input type="submit" value="Отримати конфігурацію" id="r3" formaction="check" class="check_button" onclick="openloader('loading_class')" /> </div>
+        <div class="button_2"> <input type="submit" value="Наступне питання" id="r4" formaction="/" class="next_button" /> </div>
+
+    </div>
+
+</div>
+
+
+<div id="loading_class">
+    <div class="loading_text">
+        <h2 class="loading">LOADING...</h2>
+    </div>
+</div>
+
+
+<script>
+    function openloader(loading_class){
+        display = document.getElementById('loading_class').style.display;
+        if(display == "none"){
+            document.getElementById('loading_class').style.display = "block";
+        }else{
+            document.getElementById('loading_class').style.display = "block";
+        }
+    }
+</script>
+
+
+
+<div class="footer">
+    <h3 class="footer_content">Designed by: <a href="https://www.instagram.com/azh_artist/" class="footer_href" target="blank">Best Bun Ever</a></h3>    
+</div>
+
+
+<header>
+
+
+    
+    <div class="info">
+
+    <div class="info_butt">
+        <a href="javascript:PopUpShow()"><img src="../static/Icons/info_button.png" width="30" height="30"></a>
+    </div>
+
+    </div>
+
+
+</header>
+
+
+
+
+</body>
+
+</html>

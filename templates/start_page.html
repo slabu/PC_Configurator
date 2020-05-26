@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css', v=1) }}">
+</head>
+
+
+
+
+<body class="index_background">
+
+
+    
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow(){
+            document.getElementById
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide(){
+            $("#popup1").hide();
+        }
+    </script>
+
+
+    
+
+
+
+<div id="arrowAnim">
+    <div class="arrowSliding">
+        <div class="arrow"></div>
+    </div>
+    <div class="arrowSliding delay1">
+        <div class="arrow"></div>
+    </div>
+    <div class="arrowSliding delay2">
+        <div class="arrow"></div>
+    </div>
+    <div class="arrowSliding delay3">
+        <div class="arrow"></div>
+    </div>
+</div>
+
+
+
+    <div class="title_image">
+        <img src="../static/Images/index_image.jpg" width="1920" height="1200"> 
+        <div class="title_text">
+            <h2 class="title_content">Збери комп'ютер, який потрiбен саме тобi!</h2>
+        </div>
+
+    </div>
+
+
+    
+    <div class="logo_class">
+        <div class="computer_logo"><img src="../static/Images/pc_computer_with_monitor_1_.png"  width="200" height="200"></div>
+    </div>
+
+    <form id="new_con" method="POST">
+
+    <div class="create_button_class add_class">
+        
+            <a href="/" class="create_button create_button_text"> Створити нову конфiгурацiю </a>
+
+    </div>
+
+    
+    </form>
+
+
+
+    <div class="b_popup" id="popup1">
+        <div class="b_popup_content popup_font">
+            <p>Вітаємо Вас на сервісі для створення компьютерних конфігурацій. Сервіс надає можливість збирати комп'ютери
+                для будь-якого напрямку використання.
+            </p>
+            <p>Для збірки комп'ютера Вам необхідно пройти опитування. В залежності від напрямку думки, яким ви будете відповідати на питання, кількість
+                питань буде змінюватись.
+            </p>
+            <p>Для того, щоб почати опитування, пролистайте сторінку донизу та клацніть на відповідну кнопку. Далі обирайте варіант відовіді, який задоволняє
+                Ваші потреби та побажання стосовно конфігурації, що збирається.
+            </p>
+            <p>Якщо ви захочете отримати готову конфігурацію якнайшвидше, Ви можете завершити опитування попередньо на будь-якому питанні, клацнувши по
+                відповідній кнопці, але майте на увазі, що чим більше питань матиме відповідь від Вас, тим точніше будуть підібрані комплектуючі комп'ютера.
+            </p>
+            <p>Алгоритм збере Вам комп'ютер, який матиме комплектуючі необхідного рівня для вирішення ваших задач, а також коштуватиме, як конфігурація, яка
+                виконує ці задачі без проблем для користувача.
+            </p>
+            <p>Якщо Вам не сподобалась конфігурація, Ви можете зібрати іншу, клацнувши на відповідній кнопці на фінальній сторінці.</p>
+            <a href="javascript:PopUpHide()" class="popup_butt">Закрити</a>
+        </div>
+
+
+    </div>
+
+
+
+    
+    
+
+
+
+    <div class="footer">
+        <h3 class="footer_content">Designed by: <a href="https://www.instagram.com/azh_artist/" class="footer_href" target="blank">Best Bun Ever</a></h3>    
+    </div>
+    
+
+    <header>
+
+
+    
+        <div class="info">
+    
+        <div class="info_butt">
+            <a href="javascript:PopUpShow()"><img src="../static/Icons/info_button.png" width="30" height="30"></a>
+        </div>
+    
+        </div>
+    
+    
+    </header>
+
+
+
+</body>
+
+
+</html>
