@@ -374,10 +374,10 @@ body{
 }
 
 .finish_buttons{
-    position: relative;
-    width: max-content;
+    
+    width: 100%;
     height: max-content;
-    left: 29%;
+
 }
 
 .bot{
@@ -431,14 +431,8 @@ body{
     -webkit-box-shadow: 0 0 25px #00e600;
 }
 
-.button_1{
-    float: left;
-    margin-right: 5px;
-}
-
 .button_2{
-    float: left;
-    margin-left: 5px;
+    text-align: center;
 }
 
 #loading_class{

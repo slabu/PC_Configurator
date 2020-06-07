@@ -360,8 +360,9 @@ def index():
 
     current_question = questions[session["current_question"]]["question"]
     a1, a2 = questions[session["current_question"]]["answers"]
+    description = questions[session["current_question"]]["description"]
 
-    return render_template('index.html', current_question=current_question, ans1=a1, ans2=a2)
+    return render_template('index.html', current_question=current_question, ans1=a1, ans2=a2, description=description)
 
     
 @app.route('/check', methods=['GET', 'POST'])
